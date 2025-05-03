@@ -1,0 +1,52 @@
+{
+  "theme": {
+    "extend": {
+      "animation": {
+        "fadeIn": "fadeIn 0.8s ease-in-out",
+        "fadeInUp": "fadeInUp 0.8s ease-in-out"
+      },
+      "keyframes": {
+        "fadeIn": {
+          "from": { "opacity": 0 },
+          "to": { "opacity": 1 }
+        },
+        "fadeInUp": {
+          "from": { "opacity": 0, "transform": "translateY(10px)" },
+          "to": { "opacity": 1, "transform": "translateY(0)" }
+        }
+      }
+    }
+  },
+
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "app/components/Chatbot.tsx"
+  ],
+  "exclude": ["node_modules"]
+}
